@@ -21,6 +21,8 @@ def house():
     colors = ['aquamarine2', 'azure3', 'bisque1', 'blue2', 'brown1', 'CadetBlue3', 'chartreuse', 'coral4', 'CornflowerBlue', 'cornsilk1', 'DarkOrange3', 'DarkOrchid2', 'DeepPink', 'DodgerBlue', 'firebrick', 'honeydew', 'HotPink', 'IndianRed', 'khaki', 'lavender', 'LawnGreen', 'LimeGreen', 'magenta', 'maroon', 'MistyRose', 'MintCream', 'navy', 'orange', 'orchid', 'purple', 'red', 'RoyalBlue', 'SpringGreen', 'thistle', 'tomato', 'violet', 'yellow']
     houset.pencolor(rd.choice(colors))
     houset2.pencolor(rd.choice(colors))
+    houset.width(10)
+    houset2.width(10)
     houset.forward(65)
     houset2.backward(65)
     houset.left(90)
@@ -39,5 +41,18 @@ def house():
     houset2.hideturtle()
     t.done()
 
+def star():
+    pen = t.Turtle()
+    colors = ['aquamarine2', 'azure3', 'bisque1', 'blue2', 'brown1', 'CadetBlue3', 'chartreuse', 'coral4', 'CornflowerBlue', 'cornsilk1', 'DarkOrange3', 'DarkOrchid2', 'DeepPink', 'DodgerBlue', 'firebrick', 'honeydew', 'HotPink', 'IndianRed', 'khaki', 'lavender', 'LawnGreen', 'LimeGreen', 'magenta', 'maroon', 'MistyRose', 'MintCream', 'navy', 'orange', 'orchid', 'purple', 'red', 'RoyalBlue', 'SpringGreen', 'thistle', 'tomato', 'violet', 'yellow']
+    t.bgcolor('black')
+    pen.width(10)
+    for i in range(5):
+        pen.pencolor(rd.choice(colors))
+        pen.forward(200)
+        pen.right(144)
+    pen.hideturtle()
+    t.done
+
 # generate_polygon()
 # house()
+star()
