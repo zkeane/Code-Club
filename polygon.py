@@ -54,5 +54,5 @@ def star():
     t.done
 
 # generate_polygon()
-# house()
-star()
+house()
+# star()
